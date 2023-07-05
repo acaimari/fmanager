@@ -1,0 +1,36 @@
+{
+    "name": "caimari/fmanager",
+    "type": "library",
+    "version": "1.0.1",
+    "description": "File Manager for LaraFlex and Laravel 8",
+    "keywords": ["laravel", "file manager"],
+    "homepage": "https://laraflex.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antoni Caimari Caldes",
+            "email": "laraflex-org@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Caimari\\FManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Caimari\\FManager\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Caimari\\FManager\\FManagerServiceProvider"
+            ]
+        }
+    }
+}
